@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33189FC01D1C6B4C00FAE78D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33189FBF1D1C6B4C00FAE78D /* main.m */; };
+		33189FC31D1C6B4C00FAE78D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33189FC21D1C6B4C00FAE78D /* AppDelegate.m */; };
+		33189FC61D1C6B4C00FAE78D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33189FC51D1C6B4C00FAE78D /* ViewController.m */; };
+		33189FC91D1C6B4C00FAE78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33189FC71D1C6B4C00FAE78D /* Main.storyboard */; };
+		33189FCB1D1C6B4C00FAE78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33189FCA1D1C6B4C00FAE78D /* Assets.xcassets */; };
+		33189FCE1D1C6B4C00FAE78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33189FCC1D1C6B4C00FAE78D /* LaunchScreen.storyboard */; };
+		33189FD71D1C6B6B00FAE78D /* StepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33189FD61D1C6B6B00FAE78D /* StepperView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33189FBB1D1C6B4B00FAE78D /* Day2StepperView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day2StepperView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33189FBF1D1C6B4C00FAE78D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33189FC11D1C6B4C00FAE78D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33189FC21D1C6B4C00FAE78D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33189FC41D1C6B4C00FAE78D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33189FC51D1C6B4C00FAE78D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33189FC81D1C6B4C00FAE78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33189FCA1D1C6B4C00FAE78D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33189FCD1D1C6B4C00FAE78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33189FCF1D1C6B4C00FAE78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33189FD51D1C6B6B00FAE78D /* StepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperView.h; sourceTree = "<group>"; };
+		33189FD61D1C6B6B00FAE78D /* StepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33189FB81D1C6B4B00FAE78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33189FB21D1C6B4B00FAE78D = {
+			isa = PBXGroup;
+			children = (
+				33189FBD1D1C6B4C00FAE78D /* Day2StepperView */,
+				33189FBC1D1C6B4B00FAE78D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33189FBC1D1C6B4B00FAE78D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33189FBB1D1C6B4B00FAE78D /* Day2StepperView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33189FBD1D1C6B4C00FAE78D /* Day2StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				33189FC11D1C6B4C00FAE78D /* AppDelegate.h */,
+				33189FC21D1C6B4C00FAE78D /* AppDelegate.m */,
+				33189FC41D1C6B4C00FAE78D /* ViewController.h */,
+				33189FC51D1C6B4C00FAE78D /* ViewController.m */,
+				33189FC71D1C6B4C00FAE78D /* Main.storyboard */,
+				33189FCA1D1C6B4C00FAE78D /* Assets.xcassets */,
+				33189FCC1D1C6B4C00FAE78D /* LaunchScreen.storyboard */,
+				33189FCF1D1C6B4C00FAE78D /* Info.plist */,
+				33189FBE1D1C6B4C00FAE78D /* Supporting Files */,
+				33189FD51D1C6B6B00FAE78D /* StepperView.h */,
+				33189FD61D1C6B6B00FAE78D /* StepperView.m */,
+			);
+			path = Day2StepperView;
+			sourceTree = "<group>";
+		};
+		33189FBE1D1C6B4C00FAE78D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33189FBF1D1C6B4C00FAE78D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33189FBA1D1C6B4B00FAE78D /* Day2StepperView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33189FD21D1C6B4C00FAE78D /* Build configuration list for PBXNativeTarget "Day2StepperView" */;
+			buildPhases = (
+				33189FB71D1C6B4B00FAE78D /* Sources */,
+				33189FB81D1C6B4B00FAE78D /* Frameworks */,
+				33189FB91D1C6B4B00FAE78D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day2StepperView;
+			productName = Day2StepperView;
+			productReference = 33189FBB1D1C6B4B00FAE78D /* Day2StepperView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33189FB31D1C6B4B00FAE78D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Bryan Ayllon";
+				TargetAttributes = {
+					33189FBA1D1C6B4B00FAE78D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HFG6KLKA62;
+					};
+				};
+			};
+			buildConfigurationList = 33189FB61D1C6B4B00FAE78D /* Build configuration list for PBXProject "Day2StepperView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33189FB21D1C6B4B00FAE78D;
+			productRefGroup = 33189FBC1D1C6B4B00FAE78D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33189FBA1D1C6B4B00FAE78D /* Day2StepperView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33189FB91D1C6B4B00FAE78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33189FCE1D1C6B4C00FAE78D /* LaunchScreen.storyboard in Resources */,
+				33189FCB1D1C6B4C00FAE78D /* Assets.xcassets in Resources */,
+				33189FC91D1C6B4C00FAE78D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33189FB71D1C6B4B00FAE78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33189FC61D1C6B4C00FAE78D /* ViewController.m in Sources */,
+				33189FC31D1C6B4C00FAE78D /* AppDelegate.m in Sources */,
+				33189FD71D1C6B6B00FAE78D /* StepperView.m in Sources */,
+				33189FC01D1C6B4C00FAE78D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33189FC71D1C6B4C00FAE78D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33189FC81D1C6B4C00FAE78D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33189FCC1D1C6B4C00FAE78D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33189FCD1D1C6B4C00FAE78D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33189FD01D1C6B4C00FAE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33189FD11D1C6B4C00FAE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33189FD31D1C6B4C00FAE78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Day2StepperView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bemonsterz.Day2StepperView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33189FD41D1C6B4C00FAE78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Day2StepperView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bemonsterz.Day2StepperView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33189FB61D1C6B4B00FAE78D /* Build configuration list for PBXProject "Day2StepperView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33189FD01D1C6B4C00FAE78D /* Debug */,
+				33189FD11D1C6B4C00FAE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33189FD21D1C6B4C00FAE78D /* Build configuration list for PBXNativeTarget "Day2StepperView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33189FD31D1C6B4C00FAE78D /* Debug */,
+				33189FD41D1C6B4C00FAE78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33189FB31D1C6B4B00FAE78D /* Project object */;
+}
