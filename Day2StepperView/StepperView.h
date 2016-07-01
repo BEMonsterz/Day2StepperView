@@ -7,18 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@protocol SwitchViewDelegate
-
--(void) switchViewValueChanged:(BOOL) on;
-
+@class StepperView;
+@protocol StepperViewDelegate
+- (void)stepperView:(StepperView *)stepperView valueChanged:(NSInteger)value;
 @end
-
 @interface StepperView : UIView
-{
-    
-}
 
-@property (nonatomic,weak) id<SwitchViewDelegate> delegate;
+@property (nonatomic, weak) id<StepperViewDelegate> delegate;
 
+@property (nonatomic, assign) NSInteger stepperValue;
 @end

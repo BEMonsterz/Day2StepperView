@@ -8,89 +8,56 @@
 
 #import "StepperView.h"
 
-
 @implementation StepperView
 
-
--(instancetype) initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     [self setup];
     return self;
-    
-    
-    
 }
 
--(void) setup{
-
-    UIView *middleView = [[UIView alloc] init];
-    middleView.frame = CGRectMake(125,self.frame.size.height +300,125,40);
-    middleView.backgroundColor = [UIColor colorWithRed:21/255.0 green:101/255.0 blue:192/255.0 alpha:1.0];
-
-    [self addSubview:middleView];
+- (void)setup {
+    UIView *stepperView = [[UIView alloc] init];
+    stepperView.frame = CGRectMake(0, 0, 300, 40);
     
-//    
-//    UIButton *leftView = [[UIButton alloc] init];
-//    leftView.frame= CGRectMake(middleView.frame.size.width/2 -112  ,middleView.frame.size.height/2 -20 ,50,40);
-//    leftView.backgroundColor = [UIColor colorWithRed:33/255.0 green:150/255.0 blue:243/255.0 alpha:1.0];
-//    [middleView addSubview:leftView];
-
+    stepperView.backgroundColor = [UIColor colorWithRed:21/255.0 green:101/255.0 blue:192/255.0 alpha:1.0];
+    [self addSubview:stepperView];
+    
+    //    Add Button
     UIButton *rightView = [[UIButton alloc] init];
-    rightView.frame= CGRectMake(middleView.frame.size.width/2 +50 ,middleView.frame.size.height/2 -20,50,40);
-   
-    
-    
-    
-    [rightView addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [rightView setTitle:@"OFF" forState:UIControlStateNormal];
-    
-    
-    
+    rightView.frame = CGRectMake(stepperView.frame.size.width/2 + 50, stepperView.frame.size.height/2 - 20, 100, 40);
     
     rightView.backgroundColor = [UIColor colorWithRed:33/255.0 green:150/255.0 blue:243/255.0 alpha:1.0];
+    [rightView setTitle:@"+" forState:UIControlStateNormal];
     
+    [rightView addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
+    [stepperView addSubview:rightView];
     
+    //    Subtract Button
+    UIButton *leftView = [[UIButton alloc] init];
+    leftView.frame = CGRectMake(stepperView.frame.size.width/2 - 150, stepperView.frame.size.height/2 - 20, 100, 40);
     
-    [middleView addSubview:rightView];
+    leftView.backgroundColor = [UIColor colorWithRed:33/255.0 green:150/255.0 blue:243/255.0 alpha:1.0];
+    [leftView setTitle:@"-" forState:UIControlStateNormal];
+    [leftView addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [stepperView addSubview:leftView];
 
-    
-//    [rightView setTitle:@"+" forState:UIControlStateNormal];
-//    [leftView setTitle:@"-" forState:UIControlStateNormal];
- }
 
+}
 
--(void) buttonPressed:(id) sender {
+- (void)buttonPressed:(id)sender{
+    UIButton *button = (UIButton *) sender;
     
-    UIButton *rightView = (UIButton *) sender;
-    
-    NSString *title = rightView.titleLabel.text;
-    
-    if([title isEqualToString:@"OFF"]) { // if the button is OFF
-        [rightView setTitle:@"ON" forState:UIControlStateNormal];
-        rightView.backgroundColor = [UIColor greenColor];
-        
-        // notify the delegates
-        [self.delegate switchViewValueChanged:YES];
-        
-    } else { // if the button is ON
-        [rightView setTitle:@"OFF" forState:UIControlStateNormal];
-        rightView.backgroundColor = [UIColor redColor];
-        
-        [self.delegate switchViewValueChanged:NO];
-        
+    NSString *title = button.titleLabel.text;
+    if([title isEqualToString:@"-"]) {
+        self.stepperValue--;
+    } else {
+        self.stepperValue++;
     }
     
-    NSLog(@"I am pressed");
-    NSLog(@"%@",title);
-    
+    [self.delegate stepperView:self valueChanged:self.stepperValue];
+    //    NSLog(@"%@",title);
 }
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect {
- // Drawing code
- }
- */
 
 @end

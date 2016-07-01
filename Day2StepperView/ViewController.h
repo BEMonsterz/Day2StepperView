@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StepperView.h"
 
-@interface ViewController : UIViewController<SwitchViewDelegate>
-
-
+@interface ViewController : UIViewController
+@property (nonatomic, strong) UILabel *valueLabel;
 @end
 

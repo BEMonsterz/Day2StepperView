@@ -9,39 +9,35 @@
 #import "ViewController.h"
 #import "StepperView.h"
 
-@interface ViewController ()
+@interface ViewController () <StepperViewDelegate>
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
+    StepperView *stepperView = [[StepperView alloc] initWithFrame:CGRectMake(0, 0, 300, 50)];
     
-    //
-//    SwitchView *switchView = [[SwitchView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-//    switchView.center = self.view.center;
-//    switchView.delegate = self;  // setting the view controller as a delegate to the switch view
-//    [self.view addSubview:switchView];
-//    
+    stepperView.center = self.view.center;
+    [self.view addSubview:stepperView];
+    stepperView.delegate = self;
     
+    //    Label
+    self.valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(183, 278, 100, 100)];
+    [self.valueLabel setTextColor:[UIColor whiteColor]];
     
-    StepperView *switchView = [[StepperView alloc] initWithFrame:CGRectMake(0, 0, 125,40)];
-    switchView.delegate = self;  // setting the view controller as a delegate to the switch view
-    [self.view addSubview:switchView];
+    [self.view addSubview:self.
+     
+     valueLabel];
 }
 
--(void) switchViewValueChanged:(BOOL)on {
-    NSLog(@"switchViewValueChanged");
-}
+#pragma mark - StepperViewDelegate
 
--(void) plusButtonPressed:(id) sender {
-    NSLog(@"plusButtonPressed");
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)stepperView:(StepperView *)stepperView valueChanged:(NSInteger)value {
+    
+    self.valueLabel.text = [NSString stringWithFormat:@"%ld", (long)value];
 }
 @end
